@@ -2,16 +2,16 @@
   "name": "thingstodo",
   "version": "1.0.0",
   "description": "Sample project using Typescript, reactjs, and webpack",
-   "scripts":{
-    "build":"node_modules/.bin/webpack",
-    "watch":"node_modules/.bin/webpack --watch"
+  "scripts": {
+    "build": "webpack",
+    "webpackwatch": "webpack --watch"
   },
- 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GBSal/ThingsToDo.git"
   },
   "author": "MSal",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/GBSal/ThingsToDo/issues"
   },

@@ -1,7 +1,8 @@
 // Load the core node modules.
-var HtmlWebpackPlugin = require( "node_modules/html-webpack-plugin" );
+var HtmlWebpackPlugin = require( "./node_modules/html-webpack-plugin" );
+
 var path = require( "path" );
-var webpack = require( "node_modules/webpack" );
+var webpack = require( "./node_modules/webpack" );
 
 module.exports = {
 	// I am going to generate 3 separate JavaScript files (that the HtmlWebpackPlugin
@@ -90,8 +91,8 @@ module.exports = {
 			hash: true
 		}),
 		// I compact the JavaScript content.
-		new webpack.optimize.UglifyJsPlugin({
-			keep_fnames: true
-		})
+		// new webpack.optimize.UglifyJsPlugin({
+		// 	keep_fnames: true
+		// })
 	]
 };
